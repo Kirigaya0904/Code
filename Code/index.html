@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fairy Tale shop</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./CSS/header.css">
+        <link rel="stylesheet" href="./CSS/intro.css">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img src="./Source image/Logo.PNG" alt="">           
+            <button onclick="openModal()">ĐẶT BÁNH</button>
+            <a href="#faqs">FAQs</a>
+            <a href="#product">Sản Phẩm</a>
+            <a href="#aboutus">Về Chúng Tôi</a>
+            <a href="#home">Trang Chủ</a>
+        </div>
+        
+        <div class="intro" style="padding: 2% 7% 5% 7%">
+            <div class="intro-text">
+                <h3>Đặt chiếc bánh ngon nhất</h3>
+                <h2>Ngay Bây Giờ!</h2>
+                <p>Với tình yêu dành cho bánh ngọt, The Fairytale Cakehouse 
+                mang đến cho bạn những chiếc bánh ngọt tinh tế và ngon miệng
+                nhất. Chúng tôi tỉ mỉ trong từng khâu chọn nguyên liệu tới
+                thiết kế hương vị đặc sắc, khiến từng chiếc bánh mang lại
+                sự hài lòng khi thưởng thức.
+                </p>
+                <button>CHI TIẾT</button>
+            </div>
+            <img src="./Source image/introCake.png" alt="">
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Nhập thông tin đặt bánh</h2>
+                <!-- Thêm các trường nhập thông tin vào đây -->
+                <label for="hoTen">Họ và tên:</label>
+                <input type="text" id="hoTen" name="hoTen" required>
+        
+                <label for="soDienThoai">Số điện thoại:</label>
+                <input type="tel" id="soDienThoai" name="soDienThoai" oninput="validatePhoneNumber(this)" required>
+        
+                <label for="diaChi">Địa chỉ:</label>
+                <input type="text" id="diaChi" name="diaChi" required>
+        
+                <label for="loaiBanh">Loại bánh:</label>
+                <input type="text" id="loaiBanh" name="loaiBanh" required>
+        
+                <label for="soLuong">Số lượng:</label>
+                <input type="number" id="soLuong" name="soLuong" required>
+        
+                <label for="yeuCauThem">Yêu cầu thêm:</label>
+                <textarea id="yeuCauThem" name="yeuCauThem" rows="4"></textarea>
+        
+                <br>
+                <button onclick="submitOrder()">Đặt bánh</button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+
+            
+            
+            
